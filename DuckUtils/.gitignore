@@ -1,0 +1,9 @@
+# Build files
+/bin
+/target
+
+# Eclipse stuff
+/.classpath
+/.project
+/.settings
+*.jardesc
