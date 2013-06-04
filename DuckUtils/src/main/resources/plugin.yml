@@ -1,6 +1,0 @@
-name: DuckUtils
-author: Algent
-description: Various functions for a bukkit server.
-website: https://github.com/Algent/DuckUtils/
-version: ${project.version}
-main: eu.algent.DuckUtils.DuckUtils
