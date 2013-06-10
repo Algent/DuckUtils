@@ -4,3 +4,9 @@ description: Various functions for a bukkit server.
 website: https://github.com/Algent/DuckUtils/
 version: ${project.version}
 main: eu.algent.DuckUtils.DuckUtils
+commands:
+  dugivehead:
+    description: Give to player an head with headOwner's skin.
+    usage: /<command> <headOwner> <player>
+    permission: duckutils.givehead
+    permission-message: You don't have <permission> permission.

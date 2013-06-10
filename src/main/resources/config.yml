@@ -1,0 +1,3 @@
+# DuckUtils configuration file
+plugin-enabled: true
+givehead-command-enabled: true
