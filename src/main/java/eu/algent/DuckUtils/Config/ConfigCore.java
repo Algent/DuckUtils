@@ -7,7 +7,7 @@ import eu.algent.DuckUtils.DuckUtils;
 public class ConfigCore {
 
     private boolean pluginEnabled;
-    private boolean giveHeadCommand;
+    private boolean giveHeadCommand, antiSpawnerFarming;
 
     public ConfigCore(DuckUtils plugin) {
         plugin.saveDefaultConfig();
@@ -15,6 +15,7 @@ public class ConfigCore {
 
         pluginEnabled = config.getBoolean("plugin-enabled", true);
         giveHeadCommand = config.getBoolean("givehead-command-enabled", true);
+        antiSpawnerFarming = config.getBoolean("antispawnerfarming-enabled", false);
     }
 
     public boolean isPluginEnabled() {
@@ -23,5 +24,9 @@ public class ConfigCore {
 
     public boolean isGiveHeadCommandEnabled() {
         return giveHeadCommand;
+    }
+
+    public boolean isAntiSpawnerFarmingEnabled() {
+        return antiSpawnerFarming;
     }
 }

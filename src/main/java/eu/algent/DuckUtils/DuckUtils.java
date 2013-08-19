@@ -2,6 +2,7 @@ package eu.algent.DuckUtils;
 
 import java.util.logging.Logger;
 
+import eu.algent.DuckUtils.Listeners.AntiSpawnerFarming;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -27,6 +28,7 @@ public class DuckUtils extends JavaPlugin {
         }
 
         registerCommands();
+        registerEvents();
     }
 
     @Override
@@ -39,6 +41,7 @@ public class DuckUtils extends JavaPlugin {
     }
 
     private void registerEvents() {
-        //
+        if (duckConfig.isAntiSpawnerFarmingEnabled())
+            pm.registerEvents(new AntiSpawnerFarming(), this);
     }
 }
