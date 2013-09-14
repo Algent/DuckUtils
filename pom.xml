@@ -10,7 +10,7 @@
 
 	<name>DuckUtils</name>
 	<url>https://github.com/Algent/DuckUtils</url>
-	<description>Various functions for a bukkit server.</description>
+	<description>Various functions for a bukkit server. </description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
